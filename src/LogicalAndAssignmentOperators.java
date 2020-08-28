@@ -17,13 +17,14 @@ public class LogicalAndAssignmentOperators {
         System.out.println("What is your last name?");
         lastName = s.nextLine();
         System.out.println("How old are you?");
-        age = s.nextByte();
+        age = (byte) s.nextInt();
         System.out.println("Are you married? (true/false)");
         married = s.nextBoolean();
         System.out.println("What's your size in meters?");
         size = s.nextDouble();
 
-        System.out.println("Name: " + firstName + " " + lastName);
+        //System.out.println("Name: " + firstName + " " + lastName);
+        System.out.println(String.format("Name: %s %s", firstName, lastName));
         System.out.println("You are " + age + " years old");
         System.out.printf("To say you are married is %b", married);
         System.out.println();
